@@ -38,3 +38,6 @@ function is_diagonal_matrix(user_matrix) {
 console.log(is_diagonal_matrix([[1, 0, 0], [0, 2, 0], [0, 0, 3] ]));
 console.log(is_diagonal_matrix([[1, 0, 0], [0, 2, 3], [0, 0, 3] ]));
 
+React:
+
+1) A y C
