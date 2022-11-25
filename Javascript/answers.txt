@@ -11,3 +11,4 @@ undefined
 alert(s2.toUpperCase()); // cambiamos toUpperCase por toLowerCase
 alert(s2.toLowerCase()); // esto nos daría como resultado "hello world!"
 
+3) Por como está armada la función mostrar(), lo único que se puede pasar como param es otra función, así que la mejor opción es armar otra función que ejecute console.log('Openbravo!!!');
