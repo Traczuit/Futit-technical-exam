@@ -81,3 +81,17 @@ React:
 7) B. A solamente se puede usar en constructor()
 
 8) The component responds by re-rendering
+
+9) 
+  const ListComp = () => {
+    const ListItems = people.map((person) => {
+      return (
+        <ul type="disc">
+          <li>{person.firstname}</li>
+          <li>{person.lastname}</li>
+          <li>{person.dni}</li>
+        </ul>
+      );
+    });
+    return <div>{ListItems}</div>;
+  };
