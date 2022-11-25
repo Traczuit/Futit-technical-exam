@@ -80,3 +80,4 @@ React:
 
 7) B. A solamente se puede usar en constructor()
 
+8) The component responds by re-rendering
