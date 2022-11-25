@@ -95,3 +95,13 @@ React:
     });
     return <div>{ListItems}</div>;
   };
+
+10) 
+  function Echo(data) {
+    console.log(data)
+    return <h1>{data.string}</h1>;
+  }
+
+  ...
+
+  <Echo string="Openbravo!!!" />
