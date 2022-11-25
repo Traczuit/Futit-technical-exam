@@ -6,3 +6,8 @@ Esto trae lo siguiente, en forma de alertas:
 undefined
 
 1b) Esta linea no funciona porque cuadradoDeA no existe fuera de la función calculaBinomio(), por lo que siempre va a dar undefined
+
+2)
+alert(s2.toUpperCase()); // cambiamos toUpperCase por toLowerCase
+alert(s2.toLowerCase()); // esto nos daría como resultado "hello world!"
+
