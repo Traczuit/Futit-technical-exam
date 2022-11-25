@@ -47,3 +47,18 @@ React:
 3) B
 
 4) The state is a built-in React object that is used to contain data or information about the component. A component's state can change over time; whenever it changes, the component re-renders.
+
+5) 
+    constructor()
+    static getDerivedStateFromProps()
+    render()
+    componentDidMount()
+    shouldComponentUpdate()
+    getSnapshotBeforeUpdate()
+    componentDidUpdate()
+    componentWillUnmount()
+    static getDerivedStateFromError()
+    componentDidCatch()
+    setState()
+    forceUpdate()
+
