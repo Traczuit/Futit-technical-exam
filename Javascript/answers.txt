@@ -78,3 +78,5 @@ React:
 
    <Button increment={1} onClickFunction={incrementCount} />
 
+7) B. A solamente se puede usar en constructor()
+
