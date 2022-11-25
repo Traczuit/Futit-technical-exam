@@ -1,0 +1,8 @@
+1a)
+Esto trae lo siguiente, en forma de alertas:
+25
+81
+2
+undefined
+
+1b) Esta linea no funciona porque cuadradoDeA no existe fuera de la función calculaBinomio(), por lo que siempre va a dar undefined
