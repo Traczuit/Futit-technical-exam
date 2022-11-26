@@ -7,3 +7,5 @@
 4)SELECT ad_tab.name AS "Tab Name",	ad_field.name AS "Field Name" FROM ad_tab, ad_field WHERE ad_field.ad_tab_id = ad_tab.ad_tab_id AND ad_tab.ad_window_id = 100 ORDER BY ad_tab.name, ad_field.name;
 
 5) SELECT DISTINCT ad_window.name,(SELECT COUNT(ad_tab.ad_window_id) FROM ad_tab WHERE ad_tab.ad_window_id = ad_window.ad_window_id) AS "tabs" FROM ad_window, ad_tab WHERE ad_tab.ad_window_id = ad_window.ad_window_id;
+
+6) SELECT ad_window.name, (SELECT DISTINCT COUNT(ad_field.ad_tab_id) FROM ad_field WHERE ad_field.ad_tab_id = ad_tab.ad_tab_id) AS "fields per tabs" FROM ad_window, ad_field, ad_tab WHERE ad_field.ad_tab_id = ad_tab.ad_tab_id and ad_tab.ad_window_id = ad_window.ad_window_id;
