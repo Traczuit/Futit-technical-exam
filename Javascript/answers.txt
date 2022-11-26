@@ -122,3 +122,11 @@ React:
         return <h1>el estado es: {this.state.property}</h1>;
       }
     }
+
+16) I'd use async - await and fecth:
+      const userAction = async () => {
+        const response = await fetch('http://example.com/ie.json');
+        const myJson = await response.json();
+        // do something with myJson
+      }; 
+
