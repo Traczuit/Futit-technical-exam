@@ -111,3 +111,5 @@ React:
   12) D, import { MyComponent } from './MyComponent.js';
 
   13) No devuelve o renderiza nada, ni se le asigna un valor a una variable
+
+  14) Es un componente que muestra el valor de "property", que por defecto está en 1, y un botón que al clickearlo aumenta el valor de "property".
