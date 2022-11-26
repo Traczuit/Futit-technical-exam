@@ -130,3 +130,6 @@ React:
         // do something with myJson
       }; 
 
+17) It allows you to perform side effects in your components.
+
+18)
