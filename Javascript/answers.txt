@@ -105,3 +105,5 @@ React:
   ...
 
   <Echo string="Openbravo!!!" />
+
+  11) D, import name from 'name';
