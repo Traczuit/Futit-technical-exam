@@ -106,10 +106,19 @@ React:
 
   <Echo string="Openbravo!!!" />
 
-  11) D, import name from 'name';
+11) D, import name from 'name';
 
-  12) D, import { MyComponent } from './MyComponent.js';
+ 12) D, import { MyComponent } from './MyComponent.js';
 
-  13) No devuelve o renderiza nada, ni se le asigna un valor a una variable
+ 13) No devuelve o renderiza nada, ni se le asigna un valor a una variable
 
-  14) Es un componente que muestra el valor de "property", que por defecto está en 1, y un botón que al clickearlo aumenta el valor de "property".
+14) Es un componente que muestra el valor de "property", que por defecto está en 1, y un botón que al clickearlo aumenta el valor de "property".
+
+15) 
+    class Componente extends React.Component {
+       //falta el constructor() para declarar los valores de state
+      render() {   // el setState() está dentro del render() cuando tendría que estar afuera
+        this.setState( property: "propiedad" ); //  el setState() no tiene un evento para que se ejecute (por ejemplo un click); y el parámetro de setState tiene que ir dentro de llaves, porque son valores del objeto state
+        return <h1>el estado es: {this.state.property}</h1>;
+      }
+    }
