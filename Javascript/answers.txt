@@ -109,3 +109,5 @@ React:
   11) D, import name from 'name';
 
   12) D, import { MyComponent } from './MyComponent.js';
+
+  13) No devuelve o renderiza nada, ni se le asigna un valor a una variable
