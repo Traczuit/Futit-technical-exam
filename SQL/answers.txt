@@ -9,3 +9,5 @@
 5) SELECT DISTINCT ad_window.name,(SELECT COUNT(ad_tab.ad_window_id) FROM ad_tab WHERE ad_tab.ad_window_id = ad_window.ad_window_id) AS "tabs" FROM ad_window, ad_tab WHERE ad_tab.ad_window_id = ad_window.ad_window_id;
 
 6) SELECT ad_window.name, (SELECT DISTINCT COUNT(ad_field.ad_tab_id) FROM ad_field WHERE ad_field.ad_tab_id = ad_tab.ad_tab_id) AS "fields per tabs" FROM ad_window, ad_field, ad_tab WHERE ad_field.ad_tab_id = ad_tab.ad_tab_id and ad_tab.ad_window_id = ad_window.ad_window_id;
+
+7)SELECT name, ad_window_id FROM ad_window WHERE (SELECT COUNT(ad_tab.ad_window_id) FROM ad_tab WHERE ad_tab.ad_window_id = ad_window.ad_window_id) >5;
