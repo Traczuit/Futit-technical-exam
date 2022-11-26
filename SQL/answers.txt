@@ -3,3 +3,4 @@
 2)UPDATE ad_window SET name = ad_window.name || '--' WHERE ad_window_id = 100;
 
 3) SELECT * FROM ad_tab WHERE ad_window_id = '100';
+4)SELECT ad_tab.name AS "Tab Name",	ad_field.name AS "Field Name" FROM ad_tab, ad_field WHERE ad_field.ad_tab_id = ad_tab.ad_tab_id AND ad_tab.ad_window_id = 100 ORDER BY ad_tab.name, ad_field.name;
